@@ -1,0 +1,23 @@
+<ion-view view-title="Account">
+  <ion-content class="poke">
+  	<div class="row">
+  		<div class="col animate-repeat" ng-repeat="x in datas | orderBy: 'data.id' | limitTo:limitShow | filter: foundPokemon as results track by x.data.name" ng-click="s(x)">
+  						<div class="pokeInfo" data-toggle="modal" data-target="#myModal">
+  							<div class="imgPokemon" data-toggle="tooltip" title="Información" data-placement="top">
+  								<!-- <div class="idPoke">
+  									<p class="number">
+  									</p>
+  								</div> -->
+  								<img src="{{x.data.sprites.front_default}}" alt="Pokemon" class="pokeImg">
+  								<!--<img src="{{  imgs.img  }}" alt="Pokemon" class="pokeImg">-->
+  							</div>
+  							<div class="namePokemon text-center">
+  								<span class="names">
+  									Nombre: {{ x.data.name }} NO: {{ x.data.id }}
+  								</span>
+  							</div>
+  						</div>
+  					</div>
+  	</div>
+  </ion-content>
+</ion-view>

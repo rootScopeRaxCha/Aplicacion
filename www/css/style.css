@@ -1,0 +1,94 @@
+/* Empty. Add your own CSS if you like */
+
+.Sesion{
+  background: url('../img/fondo10.jpg')no-repeat center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.main-section{
+    margin:0 auto;
+    margin-top:25%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #283747;
+    opacity: .90;
+    padding: 0 20px;
+    box-shadow: 0px 0px 50px #d8da3d;
+}
+.user-img{
+    margin-top: -100px;
+    margin-bottom: 5px;
+}
+
+.user-img img{
+    width: 100px;
+    height: 100px;
+}
+
+
+.imgPokemon {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.3);
+  border: 2px solid #000;
+  border-bottom: none;
+  -webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.75);
+  border-radius: 20px 20px 8px 8px;
+  -moz-border-radius: 20px 20px 8px 8px;
+  -webkit-border-radius: 20px 20px 8px 8px;
+}
+
+.pokeImg {
+  width: auto;
+  height: 200px;
+}
+
+/*.idPoke {
+	border: 1px solid red;
+  top: 0;
+  left: 8%;
+  right: 70%;
+  bottom: 87%;
+  position: fixed;
+  padding: 4% auto;
+  height: auto;
+}*/
+
+.namePokemon {
+  border: 2px solid #000;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 6px 4px 5px 0px rgba(0,0,0,0.75);
+  padding: 2% 0;
+  margin: 0 0 2% 0;
+  background: #0c99c1;
+  color: #fff;
+  text-shadow: 3px 3px 2px #000;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.row {
+	flex-wrap: wrap;
+}
+
+.poke {
+	 background: url('../img/bg-01.jpg')repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}

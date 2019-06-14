@@ -1,0 +1,59 @@
+<ion-view view-title="Registro">
+   <ion-content class="padding Sesion">
+       <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                    <img src="img/perfil.png">
+                </div>
+                  <div class="row responsive-sm">
+                  <div class="col email-col">
+                    <div class="list list-inset">
+                      <label class="item item-input bg-t">
+                        <input type="text" placeholder="Nombre" ng-model="user.email" class="ipt">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col pass-col">
+                    <div class="list list-inset">
+                      <label class="item item-input bg-t">
+                        <input type="password" placeholder="Apellido" ng-model="user.password">
+                        </label>
+                      </div>
+                  </div>
+                </div>
+                <div class="row responsive-sm">
+                  <div class="col email-col">
+                    <div class="list list-inset">
+                      <label class="item item-input bg-t">
+                        <input type="text" placeholder="example@email.com" ng-model="user.email" class="ipt">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col pass-col">
+                    <div class="list list-inset">
+                      <label class="item item-input bg-t">
+                        <input type="password" placeholder="Contraseña" ng-model="user.password" ng-keydown="registerT($event, user)" class="ipt">
+                        </label>
+                      </div>
+                  </div>
+                  <div class="col pass-col">
+                    <div class="list list-inset">
+                      <label class="item item-input bg-t">
+                        <input type="password" placeholder="Confirmar contraseña" ng-model="user.password" ng-keydown="registerT($event, user)" class="ipt">
+                        </label>
+                      </div>
+                  </div>
+                </div>
+                  <div class="col col-45">
+                    <button class="button button-block button-assertive" ng-click="gologin()">
+                      Registrarse
+                    </button>
+                    </div>
+                </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,46 @@
+<ion-view view-title="Iniciar Sesión">
+    <ion-content class="padding Sesion">
+       <div class="modal-dialog text-center">
+        <div class="col-sm-8 main-section">
+            <div class="modal-content">
+                <div class="col-12 user-img">
+                    <img src="img/perfil.png">
+                </div>
+                  <div class="row responsive-sm">
+                  <div class="col email-col">
+                    <div class="list list-inset">
+                      <label class="item item-input bg-t">
+                        <i class="icon ion-at placeholder-icon"></i>
+                        <input type="text" placeholder="Email" ng-model="user.email" class="ipt">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col pass-col">
+                    <div class="list list-inset">
+                      <label class="item item-input bg-t">
+                        <i class="icon ion-locked placeholder-icon"></i>
+                        <input type="password" placeholder="Contraseña" ng-model="user.password" ng-keydown="registerT($event, user)" class="ipt">
+                        </label>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-45">
+                    <button class="button button-block button-assertive" ng-click="register(user)">
+                      Registrarse
+                    </button>
+                  </div>
+                  <div class="col col-45">
+                    <button class="button button-block button-stable" ng-click="gologin()">
+                      Iniciar Sesión
+                    </button>
+                    </div>
+                </div>
+                <div class="col-12 forgot">
+                    <a href="#"> Recordar contraseña?</a>
+                </div>  
+            </div>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>
